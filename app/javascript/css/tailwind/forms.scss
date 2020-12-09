@@ -1,0 +1,19 @@
+.form__group {
+  @apply my-2;
+}
+
+.form__label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.form__inputGroup {
+  @apply mt-1 rounded-md shadow-sm;
+}
+
+.form__input {
+  @apply form-input block w-full;
+
+  @screen sm {
+    @apply text-sm leading-tight;
+  }
+}
