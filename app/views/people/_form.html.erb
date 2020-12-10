@@ -1,9 +1,0 @@
-<%= tailwind_form_with(model: person, local: true, class: "max-w-sm") do |form| %>
-  <%= form.form_group :first_name %>
-  <%= form.form_group :last_name %>
-  <%= form.form_group :email, :email_field %>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>

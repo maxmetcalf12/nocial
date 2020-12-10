@@ -1,6 +1,10 @@
 {
   "name": "nocial",
+  "author": "Maxwell Metcalf",
+  "email": "email",
   "private": true,
+  "license": "UNLICENSED",
+  "version": "0.0.1",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@rails/actioncable": "^6.0.0",
