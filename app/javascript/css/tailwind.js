@@ -13,9 +13,12 @@ module.exports = {
       colors: {
         gray: colors.gray,
         green: colors.emerald,
+        blue: colors.lightBlue,
       }
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
