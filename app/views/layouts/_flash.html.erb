@@ -1,0 +1,39 @@
+<% unless flash.empty? %>
+  <div x-data="{ flashOpen: true }">
+    <div
+      x-show="flashOpen"
+      x-transition:leave="duration-150 ease-in"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-95"
+      class="fixed w-full flex flex-col space-y-4 items-center pt-8 z-50">
+      <% if notice %>
+        <div @click.away="flashOpen = false" class="rounded-md shadow-lg bg-teal-100 p-4 w-full max-w-xl relative">
+          <i @click="flashOpen = !flashOpen" class="fas fa-times absolute text-lg text-teal-600 right-0 mr-4 cursor-pointer"></i>
+
+          <div class="flex items-start my-2">
+            <div class="flex-shrink-0">
+              <i class="fas fa-info-circle text-teal-600"></i>
+            </div>
+            <div class="ml-3">
+              <p class="text-teal-600"><%= notice %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <% if alert %>
+        <div @click.away="flashOpen = false" class="rounded-md shadow-lg bg-yellow-50 p-4 w-full max-w-xl relative">
+          <i @click="flashOpen = !flashOpen" class="fas fa-times absolute text-lg text-yellow-400 right-0 mr-4 cursor-pointer"></i>
+
+          <div class="flex items-start my-2">
+            <div class="flex-shrink-0">
+              <i class="fas fa-info-circle text-yellow-400"></i>
+            </div>
+            <div class="ml-3">
+              <p class="text-yellow-500"><%= alert %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
