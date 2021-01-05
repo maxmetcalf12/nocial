@@ -11,7 +11,8 @@ module.exports = {
         'mono': ['"IBM Plex Mono"', ...defaultTheme.fontFamily.mono]
       },
       colors: {
-        // gray: colors.warmGray,
+        gray: colors.gray,
+        green: colors.emerald,
       }
     },
   },
