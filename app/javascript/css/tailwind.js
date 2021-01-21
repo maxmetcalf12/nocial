@@ -8,13 +8,14 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
-        'mono': ['"IBM Plex Mono"', ...defaultTheme.fontFamily.mono]
+        'mono': ['"IBM Plex Mono"', ...defaultTheme.fontFamily.mono],
+        'serif': ['"IBM Plex Serif"', ...defaultTheme.fontFamily.serif]
       },
       colors: {
         gray: colors.gray,
         green: colors.emerald,
-        blue: colors.lightBlue,
         rose: colors.rose,
+        darkblue: colors.blueGray,
       }
     },
   },
