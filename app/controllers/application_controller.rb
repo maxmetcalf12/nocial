@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   private
 
   def set_default_color
-    @default_color = 'blue'
+    @default_color = 'rose'
   end
 end
