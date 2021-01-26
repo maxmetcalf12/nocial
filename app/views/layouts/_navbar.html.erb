@@ -1,19 +1,19 @@
 <!-- This example requires Tailwind CSS v1.4.0+ -->
-<div x-data="{ mobileOpen: false }" class="relative bg-blue-50 top-0 z-20">
+<div x-data="{ mobileOpen: false }" class="relative bg-<%= @default_color %>-50 top-0 z-20">
   <div class="w-full flex justify-center items-center space-x-20 py-8">
     <div class="space-x-4">
-      <a href="#" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-blue-50 hover:bg-white hover:shadow">Features</a>
-      <a href="/pricing" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-blue-50 hover:bg-white hover:shadow">Pricing</a>
+      <a href="/features" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-<%= @default_color %>-50 hover:bg-white hover:shadow">Features</a>
+      <a href="/pricing" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-<%= @default_color %>-50 hover:bg-white hover:shadow">Pricing</a>
     </div>
     <div class="">
       <h1 class="text-3xl font-bold"><a href="/">N</a></h1>
     </div>
     <div class="space-x-4">
-      <a href="/manifesto" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-blue-50 hover:bg-white hover:shadow">Manifesto</a>
-      <a href="#" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-blue-50 hover:bg-white hover:shadow">About</a>
+      <a href="/manifesto" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-<%= @default_color %>-50 hover:bg-white hover:shadow">Manifesto</a>
+      <a href="/about" class="transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 bg-<%= @default_color %>-50 hover:bg-white hover:shadow">About</a>
     </div>
   </div>
   <div class="absolute right-0 inset-y-0 flex items-center pr-24">
-      <a href="#" class="transition duration-300 ease-in-out text-sm font-medium text-blue-600 border border-blue-100 rounded-full px-8 py-3 bg-blue-50 hover:bg-blue-200">Login</a>
+      <a href="#" class="transition duration-300 ease-in-out text-sm font-medium text-<%= @default_color %>-600 border border-<%= @default_color %>-100 rounded-full px-8 py-3 bg-<%= @default_color %>-50 hover:bg-<%= @default_color %>-200">Login</a>
   </div>
 </div>
