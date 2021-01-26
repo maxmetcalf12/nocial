@@ -12,7 +12,7 @@ class HomeController < ApplicationController
         @default_color = "gray"
     end
 
-    def features
+    def blog
         @default_color = "yellow"
     end
 end

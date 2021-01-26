@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get "pricing", to: "home#pricing"
   get "manifesto", to: "home#manifesto"
   get "about", to: "home#about"
-  get "features", to: "home#features"
+  get "blog", to: "home#blog"
 end
