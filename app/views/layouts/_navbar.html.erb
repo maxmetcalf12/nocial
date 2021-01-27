@@ -27,7 +27,11 @@
     </div>
   </div>
   <div class="absolute right-0 inset-y-0 hidden md:flex items-center md:pr-8 lg:pr-24">
+    <% if user_signed_in? %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-login text-#{@default_color}-600 border-#{@default_color}-200 bg-#{@default_color}-50 hover:bg-#{@default_color}-200" %>
+    <% else %>
       <%= link_to "Login", new_user_session_path, class: "nav-login text-#{@default_color}-600 border-#{@default_color}-200 bg-#{@default_color}-50 hover:bg-#{@default_color}-200" %>
+    <% end %>
   </div>
   <div class="absolute right-0 inset-y-0 md:hidden flex items-center pr-6">
     <i class="fas fa-bars text-2xl cursor-pointer" @click="mobileOpen = !mobileOpen"></i>
