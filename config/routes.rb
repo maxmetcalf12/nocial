@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "manifesto", to: "home#manifesto"
   get "about", to: "home#about"
   get "blog", to: "home#blog"
+  post "sign_up", to: "home#sign_up"
 end
