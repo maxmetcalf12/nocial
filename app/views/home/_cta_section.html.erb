@@ -1,16 +1,23 @@
 <!-- CTA section -->
 <div class="bg-gradient-to-t from-<%= @default_color %>-50 to-white">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
-    <h2 class="text-3xl font-extrabold tracking-tight text-<%= @default_color %>-900 sm:text-4xl">
+  <div class="max-w-screen-lg mx-auto py-12 px-4 sm:px-4 sm:py-16 sm:flex sm:items-center sm:justify-between">
+    <h2 class="text-4xl text-center sm:text-left font-extrabold tracking-tight text-<%= @default_color %>-900">
       <span class="block">Ready to dive in?</span>
-      <span class="block text-<%= @default_color %>-500">Start your free trial today.</span>
+      <span class="block text-<%= @default_color %>-500">Start your free trial.</span>
     </h2>
-    <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
-      <div class="inline-flex rounded-md shadow">
-        <a href="#" class="bg-<%= @default_color %>-500 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-<%= @default_color %>-400">
-          Get started
-        </a>
+    <form class="max-w-sm mx-auto sm:mx-0 sm:max-w-none mt-8 mb-4 sm:flex sm:flex-col justify-center items-end space-y-2">
+      <div class="flex flex-wrap sm:flex-nowrap">
+        <label for="emailAddress" class="sr-only">Email address</label>
+        <input id="emailAddress" name="email" type="email" autocomplete="email" required class="w-full px-5 py-3 placeholder-gray-500 focus:ring-<%= @default_color %>-500 focus:border-<%= @default_color %>-500 sm:max-w-xs border border-<%= @default_color %>-200 rounded-md" placeholder="Enter your email">
+        <div class="w-full sm:w-auto mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+          <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-<%= @default_color %>-500 hover:bg-<%= @default_color %>-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-<%= @default_color %>-500">
+            Sign up!
+          </button>
+        </div>
       </div>
-    </div>
+      <div class="text-gray-500 text-sm text-center sm:text-right">
+        14 day free trial - no credit card required
+      </div>
+    </form>
   </div>
 </div>

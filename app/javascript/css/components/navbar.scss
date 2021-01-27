@@ -1,5 +1,5 @@
 .nav-btn {
-    @apply transition duration-300 ease-in-out text-sm text-gray-600 rounded-full px-4 py-2 hover:bg-white hover:shadow;
+    @apply transition duration-300 ease-in-out text-sm sm:text-base text-gray-600 rounded-full px-4 py-2 hover:bg-white hover:shadow;
 
     &.active {
         @apply bg-white shadow;
